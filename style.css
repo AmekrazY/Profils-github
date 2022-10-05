@@ -23,18 +23,38 @@ form, .affichage {
     max-width: 800px;
     min-width: 400px;
 }
+
 input {
     display: block;
     width: 100%;
     margin: 0 auto;
     padding: 14px;
     font-size: 18px;
-    
     border-radius: 5px;
 }
 .affichage {
     display: flex;
     justify-content: center;
+}
+.btn-recherche{
+    border: 0;
+    line-height: 2.2;
+    padding: 0 28px;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    left: 17rem;
+    top: 1rem;
+    cursor: pointer;
+    color: rgb(39, 133, 195);
+    border-radius: 10px;background-color: #FFF;
+    border:1px solid#000;
+}
+.btn-recherche:hover{
+    background-color: rgb(58, 100, 17);
+    color: #FFF;
+
 }
 .carte {
     width: 500px;
@@ -45,6 +65,7 @@ input {
     border-radius: 5px;
     background: #f1f1f1;
 }
+
 .avatar {
     height: 150px;
     width: 150px;
@@ -65,14 +86,33 @@ h2 {
     margin-top: 20px;
     list-style-type: none;
 }
+
 li {
     padding: 10px 20px;
     text-align: justify;
     font-size: 22px;
 }
+.lien{
+    cursor: pointer;
+    color: rgb(39, 133, 195);
+   
+}
 li:nth-child(1){
     margin-top: 15px;
+
 }
+/* .followers{
+    color: rgb(39, 133, 195);
+}
+.bio{
+    color: rgb(39, 133, 195);
+}
+.etoiles{
+    color: rgb(39, 133, 195);
+}
+.url{
+    color: rgb(39, 133, 195);
+} */
 
 @media (max-width:740px){
     h1 {
@@ -88,5 +128,10 @@ li:nth-child(1){
     .affichage{
         min-width: 330px;
         margin: 15px auto;
+    }
+    .btn-recherche{
+        left: 8.5rem;
+        padding: 0 15px;
+        font-size: 16px;
     }
 }
